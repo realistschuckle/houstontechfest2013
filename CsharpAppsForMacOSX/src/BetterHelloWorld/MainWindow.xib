@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4510"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController">
+            <attributedString key="userComments">
+                <fragment>
+                    <string key="content">The MIT License (MIT)  Copyright (c) 2013 Curtis Schlak  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </string>
+                    <attributes>
+                        <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <font key="NSFont" size="12" name="Menlo-Italic"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                            <tabStops/>
+                        </paragraphStyle>
+                    </attributes>
+                </fragment>
+            </attributedString>
+            <connections>
+                <outlet property="MessageLabel" destination="c6M-jo-R6Y" id="dzg-Q4-siV"/>
+                <outlet property="PushMeButton" destination="ecO-gn-h2g" id="d9A-ah-KsX"/>
+                <outlet property="window" destination="2" id="6"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" animationBehavior="default" id="2" customClass="MainWindow">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="131" y="639" width="508" height="135"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1286" height="906"/>
+            <view key="contentView" id="3">
+                <rect key="frame" x="0.0" y="0.0" width="508" height="135"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ecO-gn-h2g">
+                        <rect key="frame" x="14" y="87" width="153" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Is MonoMac hard?" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NMA-y1-d5j">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0rS-hF-DEx">
+                        <rect key="frame" x="349" y="87" width="145" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Clear the message" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Yvd-DF-BNE">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="clearText:" target="-2" id="Fdi-Ja-5wY"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c6M-jo-R6Y">
+                        <rect key="frame" x="17" y="20" width="474" height="66"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="pcP-xa-snc">
+                            <font key="font" size="48" name="LucidaGrande"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ecO-gn-h2g" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="CsY-cO-xa3"/>
+                    <constraint firstItem="c6M-jo-R6Y" firstAttribute="top" secondItem="ecO-gn-h2g" secondAttribute="bottom" constant="8" id="H5b-9g-I4R"/>
+                    <constraint firstItem="c6M-jo-R6Y" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="ZDI-Gx-tgr"/>
+                    <constraint firstAttribute="trailing" secondItem="0rS-hF-DEx" secondAttribute="trailing" constant="20" symbolic="YES" id="bQk-1Q-UTK"/>
+                    <constraint firstAttribute="trailing" secondItem="c6M-jo-R6Y" secondAttribute="trailing" constant="20" symbolic="YES" id="ddE-6Z-a4g"/>
+                    <constraint firstItem="0rS-hF-DEx" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" id="iPr-yy-oBR"/>
+                    <constraint firstItem="ecO-gn-h2g" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" id="oHy-tu-F63"/>
+                </constraints>
+            </view>
+        </window>
+    </objects>
+</document>
