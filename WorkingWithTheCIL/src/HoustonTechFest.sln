@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20827.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromCs", "FromCs\FromCs.csproj", "{ECEA96F9-7990-4A10-A1C0-AD607BB0A3D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{BBEB700C-F5FB-4EA7-AEEA-2FCDE32B0F04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECEA96F9-7990-4A10-A1C0-AD607BB0A3D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECEA96F9-7990-4A10-A1C0-AD607BB0A3D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECEA96F9-7990-4A10-A1C0-AD607BB0A3D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECEA96F9-7990-4A10-A1C0-AD607BB0A3D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBEB700C-F5FB-4EA7-AEEA-2FCDE32B0F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBEB700C-F5FB-4EA7-AEEA-2FCDE32B0F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBEB700C-F5FB-4EA7-AEEA-2FCDE32B0F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBEB700C-F5FB-4EA7-AEEA-2FCDE32B0F04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
